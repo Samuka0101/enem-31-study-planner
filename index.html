@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>ENEM 31 - Plano de Reta Final</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com'>
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+    <link rel='stylesheet' href='Css/style.css'>
+</head>
+<body>
+    <div class='background-animation'></div>
+    <div id='particles-container'></div>
+
+    <div class="mouse-glow glow-1" aria-hidden="true"></div>
+    <div class="mouse-glow glow-2" aria-hidden="true"></div>
+    <div class="mouse-glow glow-3" aria-hidden="true"></div>
+    <div class="mouse-glow glow-4" aria-hidden="true"></div>
+
+    <header class='site-header'>
+        <nav class='navbar'>
+            <a class='brand' href='#hero'>ENEM 31</a>
+            <button class='menu-toggle' aria-label='Abrir menu'>
+                <span></span><span></span><span></span>
+            </button>
+            <div class='nav-links'>
+                <a href='#hero'>Início</a>
+                <a href='#about'>Método</a>
+                <a href='#dashboard'>Plano diário</a>
+                <a href='#timeline'>Reta final</a>
+                <a href='#achievements'>Marcos</a>
+            </div>
+        </nav>
+
+        <div class='hero reveal' id='hero'>
+            <div class='hero-copy'>
+                <span class='eyebrow'>Reta final guiada</span>
+                <h1>31 dias de foco para chegar mais afiado no ENEM.</h1>
+                <p>Um painel direto para organizar conteúdo, revisão, redação e constância diária sem perder a noção do que já foi vencido.</p>
+                <div class='hero-actions'>
+                    <a class='btn btn-primary' href='#dashboard'>Abrir plano de hoje</a>
+                    <a class='btn btn-secondary' href='#about'>Ver estratégia</a>
+                </div>
+                <div class='hero-metrics'>
+                    <div class='metric-pill'><i class='fas fa-calendar-check'></i><span>31 dias</span></div>
+                    <div class='metric-pill'><i class='fas fa-pen-nib'></i><span>Redação na rotina</span></div>
+                    <div class='metric-pill'><i class='fas fa-repeat'></i><span>Revisão ativa</span></div>
+                </div>
+            </div>
+
+            <div class='hero-panel'>
+                <div class='hero-card'>
+                    <div class='hero-header'>
+                        <p class='hero-label'>Ritmo atual</p>
+                        <div class='hero-badge'>FOCO</div>
+                    </div>
+                    <div class='hero-level-row'>
+                        <h3 id='hero-level'>1</h3>
+                        <span class='hero-rank'>Aquecimento</span>
+                    </div>
+                    <div class='hero-progress-track'>
+                        <div class='hero-progress-bar' id='hero-progress'></div>
+                    </div>
+                    <p class='hero-xp-text' id='hero-xp'>0/100 XP</p>
+                </div>
+
+                <div class='hero-card secondary'>
+                    <p class='hero-label'>Missão do dia</p>
+                    <h3 id='hero-day'>Dia 1</h3>
+                    <p id='hero-day-text'>Conteúdo novo, revisão curta e uma redação mais forte.</p>
+                    <div class='clock-pill' id='clock'></div>
+                </div>
+
+                <div class='hero-card focus-strip'>
+                    <span>Prioridade</span>
+                    <strong>Estudar, marcar, revisar.</strong>
+                    <p>O painel foi feito para transformar o dia em ações pequenas e visíveis.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class='section reveal' id='about'>
+            <div class='section-heading'>
+                <span class='eyebrow'>Método</span>
+                <h2>Um ciclo simples: aprender, praticar, revisar e repetir.</h2>
+                <p>A página deixa claro o que estudar hoje, acompanha a constância e transforma cada disciplina em uma etapa concreta da preparação.</p>
+            </div>
+
+            <div class='about-grid'>
+                <article class='info-card'>
+                    <i class='fas fa-brain'></i>
+                    <h3>Blocos por disciplina</h3>
+                    <p>Matemática, linguagens, humanas, natureza e redação aparecem como compromissos do dia, com hora e conclusão.</p>
+                </article>
+                <article class='info-card'>
+                    <i class='fas fa-layer-group'></i>
+                    <h3>Reta final sem ruído</h3>
+                    <p>O visual escuro ajuda a manter concentração, mas os destaques mostram o que exige atenção agora.</p>
+                </article>
+                <article class='info-card'>
+                    <i class='fas fa-shield-alt'></i>
+                    <h3>Recompensa por constância</h3>
+                    <p>XP, sequência e marcos dão feedback rápido sem esconder o principal: cumprir o plano de hoje.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class='section reveal dev-panel' id='editor'>
+            <div class='section-heading'>
+                <span class='eyebrow'>Ajustes rápidos</span>
+                <h2>Adapte o plano ao seu dia real.</h2>
+                <p>Edite texto, tarefas e conteúdo do dia sem precisar mexer no código.</p>
+            </div>
+
+            <div class='editor-shell'>
+                <form id='editor-form' class='editor-form'>
+                    <div class='editor-grid'>
+                        <label>
+                            <span>Nome do projeto</span>
+                            <input type='text' id='editor-site-name' name='siteName' placeholder='ENEM 31'>
+                        </label>
+                        <label>
+                            <span>Título principal</span>
+                            <input type='text' id='editor-title' name='heroTitle' placeholder='31 dias de foco...'>
+                        </label>
+                        <label class='full'>
+                            <span>Descrição do hero</span>
+                            <textarea id='editor-description' name='heroDescription' rows='3'></textarea>
+                        </label>
+                        <label class='full'>
+                            <span>Frase de motivação</span>
+                            <input type='text' id='editor-motivation' name='motivationText' placeholder='Você está indo muito bem!'>
+                        </label>
+                        <label class='full'>
+                            <span>Etiqueta do bloco de estudo</span>
+                            <input type='text' id='editor-day-label' name='dayLabel' placeholder='Dia de estudo'>
+                        </label>
+                    </div>
+
+                    <div class='editor-subgrid'>
+                        <div class='editor-group'>
+                            <h3>Atividades do dia</h3>
+                            <div class='editor-task-fields' id='task-editor-fields'></div>
+                        </div>
+                        <div class='editor-group'>
+                            <h3>Conteúdo do dia</h3>
+                            <div class='editor-topic-fields' id='topic-editor-fields'></div>
+                        </div>
+                    </div>
+
+                    <div class='editor-actions'>
+                        <button type='submit' class='btn btn-primary'>Salvar alterações</button>
+                        <button type='button' id='reset-editor' class='btn btn-secondary'>Restaurar padrão</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class='section reveal' id='dashboard'>
+            <div class='section-heading'>
+                <span class='eyebrow'>Plano diário</span>
+                <h2>O que precisa sair do papel hoje.</h2>
+            </div>
+
+            <div class='dashboard-grid'>
+                <div class='card main-card'>
+                    <div class='card-header'>
+                        <h2>Cronograma de Estudos</h2>
+                        <p class='card-subtitle'>Acompanhe seu progresso diário — <span id='current-date'></span></p>
+                    </div>
+
+                    <div class='tasks-container'>
+                        <div id='tasks'></div>
+                    </div>
+
+                    <div class='progress-section'>
+                        <div class='progress-info'>
+                            <span>Plano concluído</span>
+                            <span id='percent' class='percent-text'>0%</span>
+                        </div>
+                        <div class='progress'>
+                            <div id='bar' class='progress-bar'></div>
+                        </div>
+                    </div>
+
+                    <div class='motivation'>
+                        <p id='motivation-text'></p>
+                    </div>
+                </div>
+
+                <aside class='side-card'>
+                    <div class='side-block'>
+                        <h3>Resumo de hoje</h3>
+                        <p id='hero-day-subtitle'>Seu conteúdo do dia já está preparado.</p>
+                        <div class='side-progress'>
+                            <div class='side-progress-bar' id='side-progress'></div>
+                        </div>
+                        <p class='mini-caption'>Marque só o que foi feito de verdade. O progresso precisa ser honesto.</p>
+                    </div>
+
+                    <div class='side-block'>
+                        <h3>Leitura do momento</h3>
+                        <p id='achievement-preview'>Complete tarefas para ganhar XP e desbloquear novas metas.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class='section reveal'>
+            <div class='card content-card'>
+                <div class='card-header'>
+                    <h2>Conteúdo para Hoje</h2>
+                    <p class='card-subtitle'>Tópicos recomendados para estudo, revisão e prática no dia atual.</p>
+                </div>
+
+                <div class='content-grid' id='content-grid'></div>
+            </div>
+        </section>
+
+        <section class='section reveal'>
+            <div class='stats-grid'>
+                <div class='stat-card'>
+                    <i class='fas fa-fire'></i>
+                    <div>
+                        <p class='stat-label'>Dias em Sequência</p>
+                        <p class='stat-value' id='streak'>0</p>
+                    </div>
+                </div>
+                <div class='stat-card'>
+                    <i class='fas fa-star'></i>
+                    <div>
+                        <p class='stat-label'>Total de Tarefas</p>
+                        <p class='stat-value' id='total-tasks'>0</p>
+                    </div>
+                </div>
+                <div class='stat-card'>
+                    <i class='fas fa-target'></i>
+                    <div>
+                        <p class='stat-label'>Taxa de Conclusão</p>
+                        <p class='stat-value' id='completion-rate'>0%</p>
+                    </div>
+                </div>
+                <div class='stat-card'>
+                    <i class='fas fa-calendar-times'></i>
+                    <div>
+                        <p class='stat-label'>Faltas</p>
+                        <p class='stat-value' id='absences-stat'>0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='section reveal' id='timeline'>
+            <div class='section-heading'>
+                <span class='eyebrow'>Reta final</span>
+                <h2>O mapa dos 31 dias até a prova.</h2>
+                <p>Uma linha visual do percurso completo, com o dia atual destacado e os próximos blocos em perspectiva.</p>
+            </div>
+            <div class='timeline-scroll' id='timeline-items'></div>
+        </section>
+
+        <section class='section reveal' id='achievements'>
+            <div class='section-heading'>
+                <span class='eyebrow'>Marcos</span>
+                <h2>Pequenas vitórias que sustentam a preparação.</h2>
+            </div>
+            <div class='achievements-grid' id='achievement-list'></div>
+        </section>
+    </main>
+
+    <footer class='site-footer'>
+        <p>ENEM 31 • estudo com estratégia, revisão e constância.</p>
+    </footer>
+
+    <script src='Javascript/script.js'></script>
+</body>
+</html>

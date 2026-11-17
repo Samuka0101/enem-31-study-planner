@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Aquarela de Linguagens com livro aberto e pena">
+  <defs>
+    <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="4" seed="42"/><feColorMatrix type="saturate" values="0.2"/><feBlend mode="multiply" in2="SourceGraphic"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="1.9"/></filter>
+    <linearGradient id="page" x1="0" x2="1"><stop offset="0" stop-color="#fff7e8"/><stop offset="1" stop-color="#eadfcf"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="#fbf4e7"/>
+  <g filter="url(#paper)">
+    <path d="M144 172c166-96 410-96 558-36 138 56 246 20 336 120 88 98 36 264-90 346-174 114-442 78-646 10-170-58-260-142-244-260 10-76 44-140 86-180z" fill="#f7e6d1" opacity="0.88"/>
+    <path d="M244 438c122-92 236-120 348-76 114-44 238-22 372 78-132 46-264 68-396 62-110 4-218-16-324-64z" fill="#d7eee8" opacity="0.7" filter="url(#soft)"/>
+    <path d="M222 394c142-94 262-106 366-36v224c-108-64-230-62-366 8z" fill="url(#page)" stroke="#b29b7d" stroke-width="5"/>
+    <path d="M588 358c112-72 240-60 388 34v198c-136-70-262-72-388-8z" fill="url(#page)" stroke="#b29b7d" stroke-width="5"/>
+    <path d="M588 358v224" stroke="#8a775d" stroke-width="5" opacity="0.5"/>
+    <path d="M284 430c82-28 158-28 230 0M284 474c82-28 158-28 230 0M284 518c82-24 158-24 230 0" stroke="#7a6a55" stroke-width="5" opacity="0.26"/>
+    <path d="M660 430c86-28 170-26 252 6M660 474c86-26 170-24 252 8M660 518c86-22 170-20 252 8" stroke="#7a6a55" stroke-width="5" opacity="0.26"/>
+    <path d="M704 286c96-118 200-140 312-74-60 16-92 56-112 120-64-34-130-48-200-46z" fill="#263650" opacity="0.9"/>
+    <path d="M720 286c96-78 182-92 258-58-74 20-128 50-162 92-34-18-66-30-96-34z" fill="#19c6a7" opacity="0.48"/>
+    <path d="M690 304c-44 80-78 154-104 222" stroke="#3f3528" stroke-width="9" stroke-linecap="round"/>
+    <path d="M374 218c58-44 128-44 180 2 54-44 124-44 184 0" fill="none" stroke="#ef476f" stroke-width="9" opacity="0.38" stroke-linecap="round"/>
+    <path d="M326 256c32-22 72-22 106 0M760 254c34-22 74-22 108 0" fill="none" stroke="#ffd166" stroke-width="8" opacity="0.48" stroke-linecap="round"/>
+  </g>
+</svg>

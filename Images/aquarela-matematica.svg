@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Aquarela de matematica com compasso e graficos">
+  <defs>
+    <filter id="paper"><feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="4" seed="31"/><feColorMatrix type="saturate" values="0.22"/><feBlend mode="multiply" in2="SourceGraphic"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="2"/></filter>
+    <linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#6f7d8d"/><stop offset="1" stop-color="#d6dde4"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="#fbf4e7"/>
+  <g filter="url(#paper)">
+    <path d="M178 142c190-74 494-92 708 6 206 96 232 330 78 446-156 118-460 100-674 28-192-64-252-196-214-314 22-68 58-126 102-166z" fill="#dff4ee" opacity="0.82"/>
+    <path d="M160 570c232-142 558-120 856-18-48 72-170 116-354 120-216 6-390-22-502-102z" fill="#ffd166" opacity="0.18" filter="url(#soft)"/>
+    <path d="M204 518c148-184 270-238 374-162 84 62 126 72 246-92 46-62 94-96 144-104" fill="none" stroke="#ef476f" stroke-width="13" stroke-linecap="round" opacity="0.52"/>
+    <path d="M198 522c144-182 272-244 384-160 88 66 124 66 236-88 48-68 98-108 152-116" fill="none" stroke="#9d2d46" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+    <path d="M286 562h620M286 562V182" stroke="#2d3b4e" stroke-width="5" opacity="0.62"/>
+    <path d="M348 500h34M348 438h34M348 376h34M348 314h34M348 252h34" stroke="#2d3b4e" stroke-width="3" opacity="0.32"/>
+    <path d="M430 592L710 210" stroke="url(#metal)" stroke-width="18" stroke-linecap="round"/>
+    <path d="M594 592L710 210" stroke="#596676" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="710" cy="210" r="24" fill="#ffd166" stroke="#6a5b38" stroke-width="4"/>
+    <circle cx="430" cy="592" r="11" fill="#263650"/>
+    <circle cx="594" cy="592" r="11" fill="#263650"/>
+    <path d="M438 592c38-88 82-148 132-184 50-36 96-38 138-6" fill="none" stroke="#19c6a7" stroke-width="8" opacity="0.55"/>
+    <path d="M774 290l122 0 0 122z" fill="none" stroke="#314151" stroke-width="10" opacity="0.62"/>
+    <path d="M790 306l90 90" stroke="#314151" stroke-width="5" opacity="0.28"/>
+    <circle cx="238" cy="236" r="42" fill="#19c6a7" opacity="0.2"/>
+    <circle cx="948" cy="516" r="56" fill="#ef476f" opacity="0.12"/>
+  </g>
+</svg>
